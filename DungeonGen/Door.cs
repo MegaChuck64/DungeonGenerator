@@ -29,7 +29,7 @@ namespace DungeonGen
             Parent = parent;
             Position = new Point(x, y);
             Texture = texture;
-            Size = new Point(16, 16);
+            Size = new Point(4, 4);
             wall = _wall;
         }
 

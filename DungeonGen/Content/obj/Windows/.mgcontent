@@ -4,8 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/CJ/source/repos/DungeonGen/DungeonGen/Content/Sprites/room.png</File>
-    <File>C:/Users/CJ/source/repos/DungeonGen/DungeonGen/Content/Fonts/consolas16.spritefont</File>
-    <File>C:/Users/CJ/source/repos/DungeonGen/DungeonGen/Content/Sprites/door.png</File>
+    <File>C:/Users/001404569/Downloads/DungeonGenerator-master/DungeonGenerator-master/DungeonGen/Content/Sprites/room.png</File>
+    <File>C:/Users/001404569/Downloads/DungeonGenerator-master/DungeonGenerator-master/DungeonGen/Content/Fonts/consolas16.spritefont</File>
+    <File>C:/Users/001404569/Downloads/DungeonGenerator-master/DungeonGenerator-master/DungeonGen/Content/Sprites/door.png</File>
   </SourceFiles>
 </SourceFileCollection>

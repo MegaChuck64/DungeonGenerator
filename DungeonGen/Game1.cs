@@ -159,7 +159,7 @@ namespace DungeonGen
                 }
                 else
                 {
-                    dungeon[p].Add(dungeon[p-1][rand.Next(dungeon[p-1].Count)]);
+                    dungeon[p].Add(dungeon[p-1][rand.Next(dungeon[p-1].Count-1)]);
                 }
                     for (int d = 0; d < dungeon[p][0].Doors.Count; d++)
                 {
@@ -292,7 +292,7 @@ namespace DungeonGen
                     } while (!canPlace /*|| tryCountReached) */&& tryCount < 500);
 
 
-                    if (tryCount >= 1000)
+                    if (tryCount >= 500)
                     {
                         dungeon.Clear();
                         doors.Clear();
@@ -371,7 +371,7 @@ namespace DungeonGen
 
                         do
                         {
-                            passed = CreateDungeon(7, 3);
+                            passed = CreateDungeon(8, 6);
                         } while (passed == false);
 
                         currentState = State.idle;
@@ -394,7 +394,7 @@ namespace DungeonGen
         {
             GraphicsDevice.Clear(Color.Black);
 
-            spriteBatch.Begin(transformMatrix: camera.Transformation,depthStencilState: DepthStencilState.DepthRead);
+            spriteBatch.Begin(transformMatrix: camera.Transformation, sortMode: SpriteSortMode.FrontToBack);
 
 
             string state = "";
